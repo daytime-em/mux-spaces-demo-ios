@@ -213,11 +213,49 @@ extension SpaceViewModel {
     }
 
     func publishAudio() {
-        // Unimplemented for now
+
+        /// We'll use the default options to setup
+        /// audio capture from the device mic
+        let options = AudioCaptureOptions()
+
+        /// Construct an audio track
+        let micTrack = space.makeMicrophoneCaptureAudioTrack(
+            options: options
+        )
+
+        /// Publish the audio track
+        space.publishTrack(
+            micTrack
+        ) { [weak self] (error: AudioTrack.PublishError?) in
+            guard error == nil else { return }
+
+            guard let self = self else { return }
+
+            self.publishedAudioTrack = micTrack
+        }
     }
 
     func publishVideo() {
-        // Unimplemented for now
+
+        /// We'll use the default options to setup
+        /// camera capture from the device's front camera
+        let options = CameraCaptureOptions()
+
+        /// Publish the camera track
+        let cameraTrack = space.makeCameraCaptureVideoTrack(
+            options: options
+        )
+
+        /// Publish the video track
+        space.publishTrack(
+            cameraTrack
+        ) { [weak self] (error: VideoTrack.PublishError?) in
+            guard error == nil else { return }
+
+            guard let self = self else { return }
+
+            self.publishedVideoTrack = cameraTrack
+        }
     }
 
     func upsertParticipant(

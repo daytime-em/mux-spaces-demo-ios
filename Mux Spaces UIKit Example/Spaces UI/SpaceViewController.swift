@@ -11,7 +11,7 @@ import UIKit
 
 import MuxSpaces
 
-class JoinSpaceViewController: UIViewController {
+class SpaceViewController: UIViewController {
     
     // MARK: IBOutlets for Storyboard
     @IBOutlet var participantsView: UICollectionView!
@@ -50,6 +50,7 @@ class JoinSpaceViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         /// Tear down
         cancellables.forEach { $0.cancel() }
+        AppDelegate.space.leave()
         super.viewWillDisappear(animated)
     }
     
@@ -86,13 +87,17 @@ class JoinSpaceViewController: UIViewController {
     
     func setupParticipantsView() {
         participantsView.isHidden = true
+        participantsView.setCollectionViewLayout(
+                ParticipantLayout.make(),
+                animated: false
+            )
         self.dataSource = setupParticipantsDataSource()
     }
 }
 
 // MARK: - Trigger button to call to join Space
 
-extension JoinSpaceViewController {
+extension SpaceViewController {
     func joinSpace() {
         // Setup an event handler for joining the space
         // successfully

@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // TODO: This should be like a YOUR JWT HERE kind of thing, link to the docs, explain how to use the CLI (and update explain the web UI later if necessary)
     /// Generated via the Mux CLI: https://github.com/muxinc/cli#mux-spacessign-space-id
-    static var spacesJwt: String = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoicHVibGlzaGVyIiwia2lkIjoibGN0NDAwajRGZFR6enViTVFkb2lZMjAyazdnTlBlUVRoSkh5aFJrbGlCa0FVIiwiZXhwIjoxNjczNDgyOTg5LCJhdWQiOiJydCIsInN1YiI6Ill6eVBPdnM2eVpKUUw0TlMwMXRXZmpHMDJ5RW11SklHOUZQUUlnYWlGdnZwdyJ9.fbVXSTEV-wDc-LOhkiODCjJVRnkMS_ze9gnsH8OXZpmlBRXg2CByyqg84MHIh9W4g_ozG7OrjQpvTk9k2dFSoWmYKwxQdO0w5i6lwwoamBR8TFIlA8gbSUN9V3fWJzi8tfLMPJBkun1afHJYZ9R-PwmvbZd6evnZDQ14-0j5Q0zvQEGAd0LeO4vdFEpJNuMGWmTgUT2m9PCp1gGrR2aGx-2ts_f-wSVCapi7OF6bvWqzAp3YiQVszrZ7b0bM_pTnShbjzUll2oR4kiIMFkRPLqWAa1fq1nIGkDD_g9Wh90f-jY_bTvszTA8WEGyiXhg9yx-ToW_QdKlg1j6EMURG_w"
+    static var spacesJwt: String = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoicHVibGlzaGVyIiwia2lkIjoibGN0NDAwajRGZFR6enViTVFkb2lZMjAyazdnTlBlUVRoSkh5aFJrbGlCa0FVIiwiZXhwIjoxNjczNTYyMTQ4LCJhdWQiOiJydCIsInN1YiI6Ijd1RDAwZmRndklta0RwVW1vQkFiOVIzUG82dWhVRGZiOVlHUW00YXZCbnQ4In0.iLABN-tPMmmWj0phK2p5VKW_XNr-NC73CB1d6VZBLObGkjLSqlDMk26dironO2NdsMg_dgrplp022gQt8XzgmCRhNydJOmiNFciPBTXwfNNMC4kkuxjdAtsWiFxB8btRPN_yzUGLmZnWmbZR9aDiQnUQfhbkIhft1Ejzu2kzJO8DATG6KG9C_JzYY2k2yQgD6C5rDt-kn6VagaZ18NQWqzU8e3AXN89YFWeiEQVAHVyKIRaUbfXDASHnV9MPizIGf-pHYdPc0K96e5-cOynIocTIHbgFxxBu7eUMz1isA4W0Ax4_CqDMeKDR6AbEB9z_n63sh5NYeTTsezesDlJonQ"
     
     /// Initialize a Space using the defined token
     static var space: Space = {

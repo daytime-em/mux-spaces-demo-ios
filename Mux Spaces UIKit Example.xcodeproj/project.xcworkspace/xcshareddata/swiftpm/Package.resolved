@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "mux-spaces-sdk-swift-distribution",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/muxinc/mux-spaces-sdk-swift-distribution",
+      "state" : {
+        "revision" : "6a2ad7e477e6eb6eb6f7220f5ae5c6818e794ce0",
+        "version" : "0.2.0"
+      }
+    }
+  ],
+  "version" : 2
+}

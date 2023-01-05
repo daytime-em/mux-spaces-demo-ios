@@ -16,6 +16,13 @@
 		35673FE52964F52D00507EDC /* Mux_Spaces_UIKit_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35673FE42964F52D00507EDC /* Mux_Spaces_UIKit_ExampleTests.swift */; };
 		35673FEF2964F52D00507EDC /* Mux_Spaces_UIKit_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35673FEE2964F52D00507EDC /* Mux_Spaces_UIKit_ExampleUITests.swift */; };
 		35673FF12964F52D00507EDC /* Mux_Spaces_UIKit_ExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35673FF02964F52D00507EDC /* Mux_Spaces_UIKit_ExampleUITestsLaunchTests.swift */; };
+		35673FFF29651C1400507EDC /* MuxSpaces in Frameworks */ = {isa = PBXBuildFile; productRef = 35673FFE29651C1400507EDC /* MuxSpaces */; };
+		35674002296640FB00507EDC /* JoinSpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35674001296640FB00507EDC /* JoinSpaceViewController.swift */; };
+		356740042967635600507EDC /* ParticipantSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356740032967635600507EDC /* ParticipantSnapshot.swift */; };
+		356740062967652A00507EDC /* SpaceParticipantVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356740052967652A00507EDC /* SpaceParticipantVideoCell.swift */; };
+		3567400829676BCD00507EDC /* SpaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567400729676BCD00507EDC /* SpaceViewModel.swift */; };
+		3567400A2967754700507EDC /* UIViewController+StandardAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356740092967754700507EDC /* UIViewController+StandardAlerts.swift */; };
+		3567400C29677AFE00507EDC /* ParticipantLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567400B29677AFE00507EDC /* ParticipantLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,12 @@
 		35673FEA2964F52D00507EDC /* Mux Spaces UIKit ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mux Spaces UIKit ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35673FEE2964F52D00507EDC /* Mux_Spaces_UIKit_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mux_Spaces_UIKit_ExampleUITests.swift; sourceTree = "<group>"; };
 		35673FF02964F52D00507EDC /* Mux_Spaces_UIKit_ExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mux_Spaces_UIKit_ExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		35674001296640FB00507EDC /* JoinSpaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinSpaceViewController.swift; sourceTree = "<group>"; };
+		356740032967635600507EDC /* ParticipantSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantSnapshot.swift; sourceTree = "<group>"; };
+		356740052967652A00507EDC /* SpaceParticipantVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceParticipantVideoCell.swift; sourceTree = "<group>"; };
+		3567400729676BCD00507EDC /* SpaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceViewModel.swift; sourceTree = "<group>"; };
+		356740092967754700507EDC /* UIViewController+StandardAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+StandardAlerts.swift"; sourceTree = "<group>"; };
+		3567400B29677AFE00507EDC /* ParticipantLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35673FFF29651C1400507EDC /* MuxSpaces in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +113,7 @@
 		35673FCC2964F52C00507EDC /* Mux Spaces UIKit Example */ = {
 			isa = PBXGroup;
 			children = (
+				356740002966107C00507EDC /* Spaces UI */,
 				35673FCD2964F52C00507EDC /* AppDelegate.swift */,
 				35673FCF2964F52C00507EDC /* SceneDelegate.swift */,
 				35673FD12964F52C00507EDC /* ViewController.swift */,
@@ -106,6 +121,7 @@
 				35673FD62964F52D00507EDC /* Assets.xcassets */,
 				35673FD82964F52D00507EDC /* LaunchScreen.storyboard */,
 				35673FDB2964F52D00507EDC /* Info.plist */,
+				356740092967754700507EDC /* UIViewController+StandardAlerts.swift */,
 			);
 			path = "Mux Spaces UIKit Example";
 			sourceTree = "<group>";
@@ -127,6 +143,18 @@
 			path = "Mux Spaces UIKit ExampleUITests";
 			sourceTree = "<group>";
 		};
+		356740002966107C00507EDC /* Spaces UI */ = {
+			isa = PBXGroup;
+			children = (
+				356740032967635600507EDC /* ParticipantSnapshot.swift */,
+				35674001296640FB00507EDC /* JoinSpaceViewController.swift */,
+				356740052967652A00507EDC /* SpaceParticipantVideoCell.swift */,
+				3567400729676BCD00507EDC /* SpaceViewModel.swift */,
+				3567400B29677AFE00507EDC /* ParticipantLayout.swift */,
+			);
+			path = "Spaces UI";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +171,9 @@
 			dependencies = (
 			);
 			name = "Mux Spaces UIKit Example";
+			packageProductDependencies = (
+				35673FFE29651C1400507EDC /* MuxSpaces */,
+			);
 			productName = "Mux Spaces UIKit Example";
 			productReference = 35673FCA2964F52C00507EDC /* Mux Spaces UIKit Example.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +246,9 @@
 				Base,
 			);
 			mainGroup = 35673FC12964F52C00507EDC;
+			packageReferences = (
+				35673FFD29651C1400507EDC /* XCRemoteSwiftPackageReference "mux-spaces-sdk-swift-distribution" */,
+			);
 			productRefGroup = 35673FCB2964F52C00507EDC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +292,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				356740062967652A00507EDC /* SpaceParticipantVideoCell.swift in Sources */,
+				3567400829676BCD00507EDC /* SpaceViewModel.swift in Sources */,
+				356740042967635600507EDC /* ParticipantSnapshot.swift in Sources */,
 				35673FD22964F52C00507EDC /* ViewController.swift in Sources */,
+				3567400A2967754700507EDC /* UIViewController+StandardAlerts.swift in Sources */,
 				35673FCE2964F52C00507EDC /* AppDelegate.swift in Sources */,
+				3567400C29677AFE00507EDC /* ParticipantLayout.swift in Sources */,
 				35673FD02964F52C00507EDC /* SceneDelegate.swift in Sources */,
+				35674002296640FB00507EDC /* JoinSpaceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +642,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		35673FFD29651C1400507EDC /* XCRemoteSwiftPackageReference "mux-spaces-sdk-swift-distribution" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/muxinc/mux-spaces-sdk-swift-distribution";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		35673FFE29651C1400507EDC /* MuxSpaces */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35673FFD29651C1400507EDC /* XCRemoteSwiftPackageReference "mux-spaces-sdk-swift-distribution" */;
+			productName = MuxSpaces;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 35673FC22964F52C00507EDC /* Project object */;
 }
